@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://apps.workflower.fi/vocabs/css/en -->
+<html>
+  <script async="" src="./CSS Vocabulary_files/analytics.js"></script
+  ><script type="text/javascript">
+    window['_gaUserPrefs'] = {
+      ioo: function() {
+        return true;
+      }
+    };</script
+  ><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=yes"
+    />
+    <title>
+      CSS Vocabulary
+    </title>
+    <link
+      href="http://apps.workflower.fi/vocabs/css/assets/img/vocabs-icon.png"
+      rel="icon"
+    />
+
+    <link href="./CSS Vocabulary_files/happy.css" rel="stylesheet" />
+
+    <style id="syntax-style">
+      /* UI higlight */
+      .vocab-token:focus {
+        outline: none;
+      }
+
+      .vocab-hilite {
+        background: rgba(166, 226, 45, 0.07);
+        -webkit-box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.5);
+        box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.5);
+      }
+
+      .vocab-selected {
+        background: rgba(166, 226, 45, 0.16);
+        -webkit-box-shadow: 0px 0px 0px 1px white;
+        box-shadow: 0px 0px 0px 1px white;
+      }
+
+      .vocab-code {
+        white-space: pre;
+        /* Structure */
+        /* Colors */
+      }
+      .vocab-code .comment,
+      .vocab-code .statement,
+      .vocab-code .block {
+        display: block;
+      }
+      .vocab-code .block > * {
+        margin-left: 1.5em;
+      }
+      .vocab-code .comment {
+        color: #75715e;
+      }
+      .vocab-code .at-keyword {
+        color: #f92772;
+      }
+      .vocab-code .string {
+        color: #e6db74;
+      }
+      .vocab-code .type-selector {
+        color: #f92772;
+      }
+      .vocab-code .id-selector {
+        color: #f6aa10;
+      }
+      .vocab-code .class-selector {
+        color: #a6e22d;
+      }
+      .vocab-code .attribute-selector {
+        color: #e6db74;
+      }
+      .vocab-code .pseudo-class {
+        color: #a6e22d;
+      }
+      .vocab-code .pseudo-element {
+        color: #a6e22d;
+      }
+      .vocab-code .property {
+        color: #66d9ef;
+      }
+      .vocab-code .percentage,
+      .vocab-code .unit {
+        color: #f92772;
+      }
+      .vocab-code .number {
+        color: #be84ff;
+      }
+      .vocab-code .keyword {
+        color: #66d9ef;
+      }
+      .vocab-code .color {
+        color: #66d9ef;
+      }
+      .vocab-code .arguments {
+        color: #be84ff;
+      }
+    </style>
+
+    <script src="./CSS Vocabulary_files/jquery-2.0.3.min.js"></script>
+    <script src="./CSS Vocabulary_files/jquery.cookie.js"></script>
+    <script src="./CSS Vocabulary_files/keymaster.js"></script>
+
+    <script id="vocab">
+      app = {};
+      app.vocab = {
+        tokens: [
+          {
+            name: 'comment',
+            text: 'Comment',
+            url: ''
+          },
+          {
+            name: 'statement',
+            text: 'Statement',
+            url: ''
+          },
+          {
+            name: 'rule-set',
+            text: 'Rule-set',
+            url: ''
+          },
+          {
+            name: 'at-rule',
+            text: 'At-rule',
+            url: ''
+          },
+          {
+            name: 'at-keyword',
+            text: 'At-keyword',
+            url: ''
+          },
+          {
+            name: 'media-query',
+            text: 'Media query',
+            url: ''
+          },
+          {
+            name: 'media-query-list',
+            text: 'Media query list',
+            url: ''
+          },
+
+          {
+            name: 'media-type',
+            text: 'Media type',
+            url: ''
+          },
+          {
+            name: 'expression',
+            text: 'Expression',
+            url: ''
+          },
+          {
+            name: 'media-feature',
+            text: 'Media feature',
+            url: ''
+          },
+          {
+            name: 'block',
+            text: 'Block',
+            url: ''
+          },
+          {
+            name: 'declaration-block',
+            text: 'Declaration block',
+            url: ''
+          },
+          {
+            name: 'selector',
+            text: 'Selector',
+            url: ''
+          },
+          {
+            name: 'simple-selector',
+            text: 'Simple selector',
+            url: ''
+          },
+          {
+            name: 'type-selector',
+            text: 'Type selector',
+            url: ''
+          },
+          {
+            name: 'universal-selector',
+            text: 'Universal selector',
+            url: ''
+          },
+          {
+            name: 'id-selector',
+            text: 'ID selector',
+            url: ''
+          },
+          {
+            name: 'class-selector',
+            text: 'Class selector',
+            url: ''
+          },
+          {
+            name: 'attribute-selector',
+            text: 'Attribute selector',
+            url: ''
+          },
+          {
+            name: 'pseudo-class',
+            text: 'Pseudo-class',
+            url: ''
+          },
+          {
+            name: 'pseudo-element',
+            text: 'Pseudo-element',
+            url: ''
+          },
+          {
+            name: 'combinator',
+            text: 'Combinator',
+            url: ''
+          },
+          {
+            name: 'descendant-combinator',
+            text: 'Descendant combinator',
+            url: ''
+          },
+          {
+            name: 'child-combinator',
+            text: 'Child combinator',
+            url: ''
+          },
+          {
+            name: 'adjacent-sibling-combinator',
+            text: 'Adjacent sibling combinator',
+            url: ''
+          },
+          {
+            name: 'general-sibling-combinator',
+            text: 'General sibling combinator',
+            url: ''
+          },
+          {
+            name: 'declaration',
+            text: 'Declaration',
+            url: ''
+          },
+          {
+            name: 'property',
+            text: 'Property',
+            url: ''
+          },
+          {
+            name: 'value',
+            text: 'Value',
+            url: ''
+          },
+          {
+            name: 'function',
+            text: 'Function',
+            url: ''
+          },
+          {
+            name: 'keyword',
+            text: 'Keyword',
+            url: ''
+          },
+          {
+            name: 'string',
+            text: 'String',
+            url: ''
+          },
+          {
+            name: 'url',
+            text: 'URL',
+            url: ''
+          },
+          {
+            name: 'number',
+            text: 'Number',
+            url: ''
+          },
+          {
+            name: 'percentage',
+            text: 'Percentage',
+            url: ''
+          },
+          {
+            name: 'length',
+            text: 'Length',
+            url: ''
+          },
+          {
+            name: 'unit',
+            text: 'Unit',
+            url: ''
+          },
+          {
+            name: 'color',
+            text: 'Color',
+            url: ''
+          },
+          {
+            name: 'vendor-prefix',
+            text: 'Vendor prefix',
+            url: ''
+          }
+        ]
+      };
+      app.vocabName = 'css';
+      app.locale = 'en';
+    </script>
+
+    <script src="./CSS Vocabulary_files/happy.js"></script>
+  </head>
+  <body class="" style="">
+    <div class="vocab-layout">
+      <div class="vocab-modal">
+        <div class="vocab-help" style="display: none;">
+          <h1 class="vocab-title">
+            CSS Vocabulary
+          </h1>
+          <p class="vocab-credits">
+            English:
+            <a href="http://twitter.com/sakamies">@sakamies</a>
+          </p>
+          <br />
+          <p class="vocab-help-text">
+            Click on the code or the sidebar to see which is what. Use the Tab
+            key to browse via keyboard.
+          </p>
+          <br />
+          <ul>
+            <li><a href="http://apps.workflower.fi/vocabs/css/en"></a></li>
+          </ul>
+          <button class="vocab-help-hide" title="Close help"></button>
+          <br />
+          <hr />
+          <br />
+          <a href="https://github.com/sakamies/vocabs/issues/new"
+            >Report an issue</a
+          >
+          <br />
+          <a href="https://github.com/sakamies/vocabs/fork"
+            >Create a vocab or translation</a
+          >
+          <br />
+          <br />
+          <a href="http://apps.workflower.fi/vocabs/">Vocabs</a> by
+          <a href="http://twitter.com/sakamies">@sakamies</a> /
+          <a href="http://twitter.com/workflower">@workflower</a> <br />
+        </div>
+      </div>
+      <div class="vocab-sidebar">
+        <div class="vocab-tokens-list-header">
+          <h1 class="vocab-title">
+            CSS Vocabulary
+          </h1>
+        </div>
+        <button class="vocab-help-show">?</button>
+
+        <ul class="vocab-tokens-list">
+          <li>
+            <a
+              class="vocab-token comment"
+              href="http://apps.workflower.fi/vocabs/css/en"
+              tabindex="0"
+              >Comment</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token statement"
+              href="http://apps.workflower.fi/vocabs/css/en"
+              tabindex="0"
+              >Statement</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token rule-set"
+              href="http://apps.workflower.fi/vocabs/css/en"
+              tabindex="0"
+              >Rule-set</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token at-rule"
+              href="http://apps.workflower.fi/vocabs/css/en"
+              tabindex="0"
+              >At-rule</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token at-keyword"
+              href="http://apps.workflower.fi/vocabs/css/en"
+              tabindex="0"
+              >At-keyword</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token media-query"
+              href="http://apps.workflower.fi/vocabs/css/en"
+              tabindex="0"
+              >Media query</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token media-query-list"
+              href="http://apps.workflower.fi/vocabs/css/en"
+              tabindex="0"
+              >Media query list</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token media-type"
+              href="http://apps.workflower.fi/vocabs/css/en"
+              tabindex="0"
+              >Media type</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token expression"
+              href="http://apps.workflower.fi/vocabs/css/en"
+              tabindex="0"
+              >Expression</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token media-feature"
+              href="http://apps.workflower.fi/vocabs/css/en"
+              tabindex="0"
+              >Media feature</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token block"
+              href="http://apps.workflower.fi/vocabs/css/en"
+              tabindex="0"
+              >Block</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token declaration-block"
+              href="http://apps.workflower.fi/vocabs/css/en"
+              tabindex="0"
+              >Declaration block</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token selector"
+              href="http://apps.workflower.fi/vocabs/css/en"
+              tabindex="0"
+              >Selector</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token simple-selector"
+              href="http://apps.workflower.fi/vocabs/css/en"
+              tabindex="0"
+              >Simple selector</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token type-selector"
+              href="http://apps.workflower.fi/vocabs/css/en"
+              tabindex="0"
+              >Type selector</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token universal-selector"
+              href="http://apps.workflower.fi/vocabs/css/en"
+              tabindex="0"
+              >Universal selector</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token id-selector"
+              href="http://apps.workflower.fi/vocabs/css/en"
+              tabindex="0"
+              >ID selector</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token class-selector"
+              href="http://apps.workflower.fi/vocabs/css/en"
+              tabindex="0"
+              >Class selector</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token attribute-selector"
+              href="http://apps.workflower.fi/vocabs/css/en"
+              tabindex="0"
+              >Attribute selector</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token pseudo-class"
+              href="http://apps.workflower.fi/vocabs/css/en"
+              tabindex="0"
+              >Pseudo-class</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token pseudo-element"
+              href="http://apps.workflower.fi/vocabs/css/en"
+              tabindex="0"
+              >Pseudo-element</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token combinator"
+              href="http://apps.workflower.fi/vocabs/css/en"
+              tabindex="0"
+              >Combinator</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token descendant-combinator"
+              href="http://apps.workflower.fi/vocabs/css/en"
+              tabindex="0"
+              >Descendant combinator</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token child-combinator"
+              href="http://apps.workflower.fi/vocabs/css/en"
+              tabindex="0"
+              >Child combinator</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token adjacent-sibling-combinator"
+              href="http://apps.workflower.fi/vocabs/css/en"
+              tabindex="0"
+              >Adjacent sibling combinator</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token general-sibling-combinator"
+              href="http://apps.workflower.fi/vocabs/css/en"
+              tabindex="0"
+              >General sibling combinator</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token declaration"
+              href="http://apps.workflower.fi/vocabs/css/en"
+              tabindex="0"
+              >Declaration</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token property"
+              href="http://apps.workflower.fi/vocabs/css/en"
+              tabindex="0"
+              >Property</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token value"
+              href="http://apps.workflower.fi/vocabs/css/en"
+              tabindex="0"
+              >Value</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token function"
+              href="http://apps.workflower.fi/vocabs/css/en"
+              tabindex="0"
+              >Function</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token keyword"
+              href="http://apps.workflower.fi/vocabs/css/en"
+              tabindex="0"
+              >Keyword</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token string"
+              href="http://apps.workflower.fi/vocabs/css/en"
+              tabindex="0"
+              >String</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token url"
+              href="http://apps.workflower.fi/vocabs/css/en"
+              tabindex="0"
+              >URL</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token number"
+              href="http://apps.workflower.fi/vocabs/css/en"
+              tabindex="0"
+              >Number</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token percentage"
+              href="http://apps.workflower.fi/vocabs/css/en"
+              tabindex="0"
+              >Percentage</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token length"
+              href="http://apps.workflower.fi/vocabs/css/en"
+              tabindex="0"
+              >Length</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token unit"
+              href="http://apps.workflower.fi/vocabs/css/en"
+              tabindex="0"
+              >Unit</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token color"
+              href="http://apps.workflower.fi/vocabs/css/en"
+              tabindex="0"
+              >Color</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token vendor-prefix"
+              href="http://apps.workflower.fi/vocabs/css/en"
+              tabindex="0"
+              >Vendor prefix</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="vocab-content">
+        <code class="vocab-code"
+          ><br /><span class="comment vocab-token" tabindex="0"
+            >/* Styles */</span
+          ><br /><span class="statement at-rule import vocab-token" tabindex="0"
+            ><span class="at-keyword vocab-token" tabindex="0">@import</span
+            >&nbsp;<span class="string vocab-token" tabindex="0"
+              >"extra.css"</span
+            >;<br /></span
+          >&nbsp;<span class="statement rule-set vocab-token" tabindex="0"
+            ><span class="selector vocab-token" tabindex="0"
+              ><span
+                class="simple-selector type-selector vocab-token"
+                tabindex="0"
+                >ul</span
+              ><span
+                class="combinator descendant-combinator vocab-token"
+                tabindex="0"
+                >&nbsp;</span
+              ><span
+                class="simple-selector type-selector vocab-token"
+                tabindex="0"
+                >li</span
+              ></span
+            ><span class="block declaration-block vocab-token" tabindex="0"
+              >{<br /><span class="declaration vocab-token" tabindex="0"
+                ><span class="property vocab-token" tabindex="0"
+                  >list-style</span
+                >:&nbsp;<span class="value vocab-token" tabindex="0"
+                  ><span class="keyword vocab-token" tabindex="0"
+                    >square</span
+                  ></span
+                >;<br /></span
+              ><span class="declaration vocab-token" tabindex="0"
+                ><span class="property vocab-token" tabindex="0">margin</span
+                >:&nbsp;<span class="value vocab-token" tabindex="0"
+                  ><span class="length vocab-token" tabindex="0"
+                    ><span class="number vocab-token" tabindex="0">2</span
+                    ><span class="unit vocab-token" tabindex="0">em</span></span
+                  >&nbsp;<span class="percentage vocab-token" tabindex="0"
+                    ><span class="number vocab-token" tabindex="0">20</span
+                    ><span>%</span></span
+                  >&nbsp;<span class="length vocab-token" tabindex="0"
+                    ><span class="number vocab-token" tabindex="0">15</span
+                    ><span class="unit vocab-token" tabindex="0">px</span></span
+                  >&nbsp;<span class="number vocab-token" tabindex="0"
+                    >0</span
+                  ></span
+                >;<br /></span
+              >}</span
+            ></span
+          >&nbsp;<span class="statement rule-set vocab-token" tabindex="0"
+            ><span class="selector vocab-token" tabindex="0"
+              ><span
+                class="simple-selector id-selector vocab-token"
+                tabindex="0"
+                >#content</span
+              ></span
+            ><span class="block declaration-block vocab-token" tabindex="0"
+              >{<br /><span class="declaration vocab-token" tabindex="0"
+                ><span class="property vocab-token" tabindex="0"
+                  ><span class="vendor-prefix vocab-token" tabindex="0"
+                    >-webkit-</span
+                  ><span>font-smoothing</span></span
+                >:&nbsp;<span class="value vocab-token" tabindex="0"
+                  ><span class="keyword vocab-token" tabindex="0"
+                    >antialiased</span
+                  ></span
+                >;<br /></span
+              ><span class="declaration vocab-token" tabindex="0"
+                ><span class="property vocab-token" tabindex="0"
+                  >background</span
+                >:&nbsp;<span class="value vocab-token" tabindex="0"
+                  ><span class="function vocab-token" tabindex="0"
+                    ><span class="function-name">url</span>(<span
+                      class="arguments"
+                      ><span class="agrument"
+                        ><span class="url vocab-token" tabindex="0"
+                          >img/gradient.png</span
+                        ></span
+                      ></span
+                    >)</span
+                  ></span
+                >;<br /></span
+              ><span class="declaration vocab-token" tabindex="0"
+                ><span class="property vocab-token" tabindex="0"
+                  >background</span
+                >:&nbsp;<span class="value vocab-token" tabindex="0"
+                  ><span class="function vocab-token" tabindex="0"
+                    ><span class="function-name">linear-gradient</span>(<span
+                      class="arguments"
+                      ><span class="argument"
+                        ><span class="keyword vocab-token" tabindex="0">to</span
+                        >&nbsp;<span class="keyword vocab-token" tabindex="0"
+                          >bottom</span
+                        ></span
+                      >,&nbsp;<span class="argument"
+                        ><span class="keyword color vocab-token" tabindex="0"
+                          >red</span
+                        ></span
+                      >,&nbsp;<span class="argument"
+                        ><span class="color vocab-token" tabindex="0"
+                          >rgba(255,0,0,0)</span
+                        ></span
+                      ></span
+                    ><span>)</span></span
+                  ></span
+                >;<br /></span
+              >}</span
+            ></span
+          >&nbsp;<span
+            class="statement at-rule rule-set media-query vocab-token"
+            tabindex="0"
+            ><span class="at-keyword vocab-token" tabindex="0">@media</span
+            >&nbsp;<span class="media-query-list vocab-token" tabindex="0"
+              ><span class="keyword vocab-token" tabindex="0">only</span
+              >&nbsp;<span class="media-type vocab-token" tabindex="0"
+                >screen</span
+              >&nbsp;<span class="keyword vocab-token" tabindex="0">and</span
+              >&nbsp;<span class="expression vocab-token" tabindex="0"
+                >(<span class="media-feature vocab-token" tabindex="0"
+                  >min-width</span
+                >:&nbsp;<span class="value vocab-token" tabindex="0"
+                  ><span class="length vocab-token" tabindex="0"
+                    ><span class="number vocab-token" tabindex="0">35</span
+                    ><span class="unit vocab-token" tabindex="0">em</span></span
+                  ></span
+                >)</span
+              ></span
+            ><span class="block vocab-token" tabindex="0"
+              >{<br /><span class="statement rule-set vocab-token" tabindex="0"
+                ><span class="selector vocab-token" tabindex="0"
+                  ><span
+                    class="simple-selector id-selector vocab-token"
+                    tabindex="0"
+                    >#content</span
+                  ></span
+                ><span class="block declaration-block vocab-token" tabindex="0"
+                  >{<br /><span class="declaration vocab-token" tabindex="0"
+                    ><span class="property vocab-token" tabindex="0">width</span
+                    >:&nbsp;<span class="value vocab-token" tabindex="0"
+                      ><span class="percentage vocab-token" tabindex="0"
+                        ><span class="number vocab-token" tabindex="0">50</span
+                        ><span>%</span></span
+                      ></span
+                    >;<br /></span
+                  >}</span
+                ></span
+              >}</span
+            ></span
+          >&nbsp;<span class="statement rule-set vocab-token" tabindex="0"
+            ><span class="selector vocab-token" tabindex="0"
+              ><span
+                class="simple-selector class-selector vocab-token"
+                tabindex="0"
+                >.item</span
+              >&nbsp;<span
+                class="combinator adjacent-sibling-combinator vocab-token"
+                tabindex="0"
+                >+</span
+              >&nbsp;<span
+                class="simple-selector class-selector vocab-token"
+                tabindex="0"
+                >.item</span
+              ></span
+            ><span>,<br /></span
+            ><span class="selector vocab-token" tabindex="0"
+              ><span
+                class="simple-selector class-selector vocab-token"
+                tabindex="0"
+                >.item</span
+              >&nbsp;<span
+                class="combinator general-sibling-combinator vocab-token"
+                tabindex="0"
+                >~</span
+              >&nbsp;<span
+                class="simple-selector class-selector vocab-token"
+                tabindex="0"
+                >.item</span
+              ></span
+            ><span class="block declaration-block vocab-token" tabindex="0"
+              >{<br /><span class="declaration vocab-token" tabindex="0"
+                ><span class="property vocab-token" tabindex="0"
+                  >margin-left</span
+                >:&nbsp;<span class="value vocab-token" tabindex="0"
+                  ><span class="length vocab-token" tabindex="0"
+                    ><span class="number vocab-token" tabindex="0">-15</span
+                    ><span class="unit vocab-token" tabindex="0">px</span></span
+                  ></span
+                >;<br /></span
+              >}</span
+            ></span
+          >&nbsp;<span class="statement rule-set vocab-token" tabindex="0"
+            ><span class="selector vocab-token" tabindex="0"
+              ><span
+                class="simple-selector id-selector vocab-token"
+                tabindex="0"
+                >#buttons</span
+              ><span
+                class="combinator descendant-combinator vocab-token"
+                tabindex="0"
+                >&nbsp;</span
+              ><span
+                class="simple-selector class-selector vocab-token"
+                tabindex="0"
+                >.lotsofcontent</span
+              ></span
+            ><span>,<br /></span
+            ><span class="selector vocab-token" tabindex="0"
+              ><span
+                class="simple-selector id-selector vocab-token"
+                tabindex="0"
+                >#buttons</span
+              >&nbsp;<span
+                class="combinator child-combinator vocab-token"
+                tabindex="0"
+                >&gt;</span
+              >&nbsp;<span
+                class="simple-selector universal-selector vocab-token"
+                tabindex="0"
+                >*</span
+              ></span
+            ><span>,<br /></span
+            ><span class="selector vocab-token" tabindex="0"
+              ><span
+                class="simple-selector type-selector vocab-token"
+                tabindex="0"
+                >input</span
+              ><span
+                class="simple-selector attribute-selector vocab-token"
+                tabindex="0"
+                >[type=submit]</span
+              ></span
+            ><span class="block declaration-block vocab-token" tabindex="0"
+              >{<br /><span class="declaration vocab-token" tabindex="0"
+                ><span class="property vocab-token" tabindex="0"
+                  >border-radius</span
+                >:&nbsp;<span class="value vocab-token" tabindex="0"
+                  ><span class="length vocab-token" tabindex="0"
+                    ><span class="number vocab-token" tabindex="0">.3</span
+                    ><span class="unit vocab-token" tabindex="0"
+                      >rem</span
+                    ></span
+                  ></span
+                >;<br /></span
+              >}</span
+            ></span
+          >&nbsp;<span class="statement rule-set vocab-token" tabindex="0"
+            ><span class="selector vocab-token" tabindex="0"
+              ><span
+                class="simple-selector type-selector vocab-token"
+                tabindex="0"
+                >a</span
+              ><span
+                class="simple-selector pseudo-class vocab-token"
+                tabindex="0"
+                >:hover</span
+              ></span
+            ><span>,<br /></span
+            ><span class="selector vocab-token" tabindex="0"
+              ><span
+                class="simple-selector type-selector vocab-token"
+                tabindex="0"
+                >a</span
+              ><span
+                class="simple-selector pseudo-class vocab-token"
+                tabindex="0"
+                >:focus</span
+              ></span
+            ><span class="block declaration-block vocab-token" tabindex="0"
+              >{<br /><span class="declaration vocab-token" tabindex="0"
+                ><span class="property vocab-token" tabindex="0">color</span
+                >:&nbsp;<span class="value vocab-token" tabindex="0"
+                  ><span class="keyword color vocab-token" tabindex="0"
+                    >green</span
+                  ></span
+                >;<br /></span
+              >}</span
+            ></span
+          >&nbsp;<span class="statement rule-set vocab-token" tabindex="0"
+            ><span class="selector vocab-token" tabindex="0"
+              ><span
+                class="simple-selector type-selector vocab-token"
+                tabindex="0"
+                >blockquote</span
+              ><span class="pseudo-element vocab-token" tabindex="0"
+                >::before</span
+              ></span
+            ><span>,<br /></span
+            ><span class="selector vocab-token" tabindex="0"
+              ><span
+                class="simple-selector type-selector vocab-token"
+                tabindex="0"
+                >blockquote</span
+              ><span class="pseudo-element vocab-token" tabindex="0"
+                >::after</span
+              ></span
+            ><span class="block declaration-block vocab-token" tabindex="0"
+              >{<br /><span class="declaration vocab-token" tabindex="0"
+                ><span class="property vocab-token" tabindex="0">content</span
+                >:&nbsp;<span class="value vocab-token" tabindex="0"
+                  ><span class="string vocab-token" tabindex="0"
+                    >"\201d"</span
+                  ></span
+                >;<br /></span
+              >}</span
+            ></span
+          >&nbsp;
+        </code>
+      </div>
+    </div>
+
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        (i[r] =
+          i[r] ||
+          function() {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        'script',
+        '//www.google-analytics.com/analytics.js',
+        'ga'
+      );
+      ga('create', 'UA-21435402-3', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

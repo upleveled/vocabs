@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://apps.workflower.fi/vocabs/html/en -->
+<html>
+  <script async="" src="./HTML Vocabulary_files/analytics.js"></script
+  ><script type="text/javascript">
+    window['_gaUserPrefs'] = {
+      ioo: function() {
+        return true;
+      }
+    };</script
+  ><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=yes"
+    />
+    <title>
+      HTML Vocabulary
+    </title>
+    <link
+      href="http://apps.workflower.fi/vocabs/html/assets/img/vocabs-icon.png"
+      rel="icon"
+    />
+
+    <link href="./HTML Vocabulary_files/happy.css" rel="stylesheet" />
+
+    <style id="syntax-style">
+      /* UI higlight */
+      .vocab-token:focus {
+        outline: none;
+      }
+
+      .vocab-hilite {
+        background: rgba(166, 226, 45, 0.07);
+        -webkit-box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.5);
+        box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.5);
+      }
+
+      .vocab-selected {
+        background: rgba(166, 226, 45, 0.16);
+        -webkit-box-shadow: 0px 0px 0px 1px white;
+        box-shadow: 0px 0px 0px 1px white;
+      }
+
+      .vocab-code {
+        white-space: pre;
+        /* Structure */
+        /* Make elements collapse to their content width */
+        /* Colors */
+      }
+      .vocab-code .doctype,
+      .vocab-code .element,
+      .vocab-code .children,
+      .vocab-code .siblings,
+      .vocab-code .element > .text {
+        display: block;
+      }
+      .vocab-code .children {
+        margin-left: 0.75em;
+        padding-left: 0.75em;
+      }
+      .vocab-code .element > .text {
+        margin-left: 1.5em;
+      }
+      .vocab-code .comment,
+      .vocab-code .element,
+      .vocab-code .siblings {
+        clear: both;
+        float: left;
+      }
+      .vocab-code .siblings::before,
+      .vocab-code .siblings::after,
+      .vocab-code .children::before,
+      .vocab-code .children::after {
+        content: '';
+        display: table;
+        clear: both;
+      }
+      .vocab-code .tag {
+        clear: both;
+      }
+      .vocab-code .comment {
+        color: #75715e;
+      }
+      .vocab-code .doctype {
+        color: #f92772;
+      }
+      .vocab-code .tag-name {
+        color: #f92772;
+      }
+      .vocab-code .attribute-name {
+        color: #a6e22d;
+      }
+      .vocab-code .attribute-value {
+        color: #e6db74;
+      }
+      .vocab-code .character-reference {
+        color: #be84ff;
+      }
+    </style>
+
+    <script src="./HTML Vocabulary_files/jquery-2.0.3.min.js"></script>
+    <script src="./HTML Vocabulary_files/jquery.cookie.js"></script>
+    <script src="./HTML Vocabulary_files/keymaster.js"></script>
+
+    <script id="vocab">
+      app = {};
+      app.vocab = {
+        tokens: [
+          {
+            name: 'i',
+            text: 'Syntax',
+            url: ''
+          },
+          {
+            name: 'doctype',
+            text: 'Doctype',
+            url: ''
+          },
+          {
+            name: 'element',
+            text: 'Element',
+            url: ''
+          },
+          {
+            name: 'tag',
+            text: 'Tag',
+            url: ''
+          },
+          {
+            name: 'tag-name',
+            text: 'Tag name',
+            url: ''
+          },
+          {
+            name: 'start-tag',
+            text: 'Start tag',
+            url: ''
+          },
+          {
+            name: 'end-tag',
+            text: 'End tag',
+            url: ''
+          },
+          {
+            name: 'attribute',
+            text: 'Attribute',
+            url: ''
+          },
+          {
+            name: 'attribute-name',
+            text: 'Attribute name',
+            url: ''
+          },
+          {
+            name: 'attribute-value',
+            text: 'Attribute value',
+            url: ''
+          },
+          {
+            name: 'comment',
+            text: 'Comment',
+            url: ''
+          },
+          {
+            name: 'text',
+            text: 'Text',
+            url: ''
+          },
+          {
+            name: 'character-reference',
+            text: 'Character reference',
+            url: ''
+          },
+          {
+            name: 'i',
+            text: 'Structure',
+            url: ''
+          },
+          {
+            name: 'root',
+            text: 'Root',
+            url: ''
+          },
+          {
+            name: 'parent',
+            text: 'Parent',
+            url: ''
+          },
+          {
+            name: 'children',
+            text: 'Children',
+            url: ''
+          },
+          {
+            name: 'child',
+            text: 'Child',
+            url: ''
+          },
+          {
+            name: 'siblings',
+            text: 'Siblings',
+            url: ''
+          },
+          {
+            name: 'sibling',
+            text: 'Sibling',
+            url: ''
+          }
+        ]
+      };
+      app.vocabName = 'html';
+      app.locale = 'en';
+    </script>
+
+    <script src="./HTML Vocabulary_files/happy.js"></script>
+  </head>
+  <body class="" style="">
+    <div class="vocab-layout">
+      <div class="vocab-modal">
+        <div class="vocab-help" style="display: none;">
+          <h1 class="vocab-title">
+            HTML Vocabulary
+          </h1>
+          <p class="vocab-credits">
+            English:
+            <a href="http://twitter.com/sakamies">@sakamies</a>
+          </p>
+          <br />
+          <p class="vocab-help-text">
+            Click on the code or the sidebar to see which is what. Use the Tab
+            key to browse via keyboard.
+          </p>
+          <br />
+          <ul>
+            <li>
+              <a
+                href="http://www.w3.org/html/wg/drafts/html/CR/syntax.html#syntax"
+                >HTML5 Syntax Specification</a
+              >
+            </li>
+          </ul>
+          <button class="vocab-help-hide" title="Close help"></button>
+          <br />
+          <hr />
+          <br />
+          <a href="https://github.com/sakamies/vocabs/issues/new"
+            >Report an issue</a
+          >
+          <br />
+          <a href="https://github.com/sakamies/vocabs/fork"
+            >Create a vocab or translation</a
+          >
+          <br />
+          <br />
+          <a href="http://apps.workflower.fi/vocabs/">Vocabs</a> by
+          <a href="http://twitter.com/sakamies">@sakamies</a> /
+          <a href="http://twitter.com/workflower">@workflower</a> <br />
+        </div>
+      </div>
+      <div class="vocab-sidebar">
+        <div class="vocab-tokens-list-header">
+          <h1 class="vocab-title">
+            HTML Vocabulary
+          </h1>
+        </div>
+        <button class="vocab-help-show">?</button>
+
+        <ul class="vocab-tokens-list">
+          <li>
+            <a
+              class="vocab-token i"
+              href="http://apps.workflower.fi/vocabs/html/en"
+              tabindex="0"
+              >Syntax</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token doctype"
+              href="http://apps.workflower.fi/vocabs/html/en"
+              tabindex="0"
+              >Doctype</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token element"
+              href="http://apps.workflower.fi/vocabs/html/en"
+              tabindex="0"
+              >Element</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token tag"
+              href="http://apps.workflower.fi/vocabs/html/en"
+              tabindex="0"
+              >Tag</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token tag-name"
+              href="http://apps.workflower.fi/vocabs/html/en"
+              tabindex="0"
+              >Tag name</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token start-tag"
+              href="http://apps.workflower.fi/vocabs/html/en"
+              tabindex="0"
+              >Start tag</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token end-tag"
+              href="http://apps.workflower.fi/vocabs/html/en"
+              tabindex="0"
+              >End tag</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token attribute"
+              href="http://apps.workflower.fi/vocabs/html/en"
+              tabindex="0"
+              >Attribute</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token attribute-name"
+              href="http://apps.workflower.fi/vocabs/html/en"
+              tabindex="0"
+              >Attribute name</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token attribute-value"
+              href="http://apps.workflower.fi/vocabs/html/en"
+              tabindex="0"
+              >Attribute value</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token comment"
+              href="http://apps.workflower.fi/vocabs/html/en"
+              tabindex="0"
+              >Comment</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token text"
+              href="http://apps.workflower.fi/vocabs/html/en"
+              tabindex="0"
+              >Text</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token character-reference"
+              href="http://apps.workflower.fi/vocabs/html/en"
+              tabindex="0"
+              >Character reference</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token i"
+              href="http://apps.workflower.fi/vocabs/html/en"
+              tabindex="0"
+              >Structure</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token root"
+              href="http://apps.workflower.fi/vocabs/html/en"
+              tabindex="0"
+              >Root</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token parent"
+              href="http://apps.workflower.fi/vocabs/html/en"
+              tabindex="0"
+              >Parent</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token children"
+              href="http://apps.workflower.fi/vocabs/html/en"
+              tabindex="0"
+              >Children</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token child"
+              href="http://apps.workflower.fi/vocabs/html/en"
+              tabindex="0"
+              >Child</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token siblings"
+              href="http://apps.workflower.fi/vocabs/html/en"
+              tabindex="0"
+              >Siblings</a
+            >
+          </li>
+          <li>
+            <a
+              class="vocab-token sibling"
+              href="http://apps.workflower.fi/vocabs/html/en"
+              tabindex="0"
+              >Sibling</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="vocab-content">
+        <code class="vocab-code"
+          ><span class="doctype vocab-token" tabindex="0"
+            >&lt;!DOCTYPE html&gt;</span
+          ><span class="element root parent vocab-token" tabindex="0"
+            ><span class="tag start-tag vocab-token" tabindex="0"
+              >&lt;<span class="tag-name vocab-token" tabindex="0">html</span
+              >&gt;</span
+            ><span class="children vocab-token" tabindex="0"
+              ><span class="siblings vocab-token" tabindex="0"
+                ><span
+                  class="element parent child sibling vocab-token"
+                  tabindex="0"
+                  ><span class="tag start-tag vocab-token" tabindex="0"
+                    >&lt;<span class="tag-name vocab-token" tabindex="0"
+                      >head</span
+                    >&gt;</span
+                  ><span class="children vocab-token" tabindex="0"
+                    ><span class="siblings vocab-token" tabindex="0"
+                      ><span
+                        class="element child sibling vocab-token"
+                        tabindex="0"
+                        ><span class="tag start-tag vocab-token" tabindex="0"
+                          >&lt;<span class="tag-name vocab-token" tabindex="0"
+                            >title</span
+                          >&gt;</span
+                        ><span class="text vocab-token" tabindex="0"
+                          >HTML Vocabulary Example</span
+                        ><span class="tag end-tag vocab-token" tabindex="0"
+                          >&lt;/<span class="tag-name vocab-token" tabindex="0"
+                            >title</span
+                          >&gt;</span
+                        ></span
+                      ><span
+                        class="element child sibling vocab-token"
+                        tabindex="0"
+                        ><span class="tag start-tag vocab-token" tabindex="0"
+                          >&lt;<span class="tag-name vocab-token" tabindex="0"
+                            >link</span
+                          >&nbsp;<span class="attributes"
+                            ><span class="attribute vocab-token" tabindex="0"
+                              ><span
+                                class="attribute-name vocab-token"
+                                tabindex="0"
+                                >rel</span
+                              >="<span
+                                class="attribute-value text vocab-token"
+                                tabindex="0"
+                                >stylesheet</span
+                              >"</span
+                            >&nbsp;<span
+                              class="attribute vocab-token"
+                              tabindex="0"
+                              ><span
+                                class="attribute-name vocab-token"
+                                tabindex="0"
+                                >href</span
+                              >="<span
+                                class="attribute-value text vocab-token"
+                                tabindex="0"
+                                >style.css</span
+                              >"</span
+                            ></span
+                          >&gt;</span
+                        ></span
+                      ></span
+                    ></span
+                  ><span class="tag end-tag vocab-token" tabindex="0"
+                    >&lt;/<span class="tag-name vocab-token" tabindex="0"
+                      >head</span
+                    >&gt;</span
+                  ></span
+                ><span
+                  class="element parent child sibling vocab-token"
+                  tabindex="0"
+                  ><span class="tag start-tag vocab-token" tabindex="0"
+                    >&lt;<span class="tag-name vocab-token" tabindex="0"
+                      >body</span
+                    >&gt;</span
+                  ><span class="children vocab-token" tabindex="0"
+                    ><span class="comment vocab-token" tabindex="0"
+                      >&lt;!--<span class="text vocab-token" tabindex="0"
+                        >Mumbo jumbo</span
+                      >--&gt;</span
+                    ><span class="siblings vocab-token" tabindex="0"
+                      ><span
+                        class="element child sibling vocab-token"
+                        tabindex="0"
+                        ><span class="tag start-tag vocab-token" tabindex="0"
+                          >&lt;<span class="tag-name vocab-token" tabindex="0"
+                            >p</span
+                          >&gt;</span
+                        ><span class="text vocab-token" tabindex="0"
+                          >Lorem ipsum dolor sit amet.</span
+                        ><span class="tag end-tag vocab-token" tabindex="0"
+                          >&lt;/<span class="tag-name vocab-token" tabindex="0"
+                            >p</span
+                          >&gt;</span
+                        ></span
+                      ><span
+                        class="element child sibling vocab-token"
+                        tabindex="0"
+                        ><span class="tag start-tag vocab-token" tabindex="0"
+                          >&lt;<span class="tag-name vocab-token" tabindex="0"
+                            >div</span
+                          >&nbsp;<span class="attributes"
+                            ><span class="attribute vocab-token" tabindex="0"
+                              ><span
+                                class="attribute-name vocab-token"
+                                tabindex="0"
+                                >class</span
+                              >="<span
+                                class="attribute-value text vocab-token"
+                                tabindex="0"
+                                >special</span
+                              >"</span
+                            >&nbsp;<span
+                              class="attribute vocab-token"
+                              tabindex="0"
+                              ><span
+                                class="attribute-name vocab-token"
+                                tabindex="0"
+                                >contenteditable</span
+                              ></span
+                            ></span
+                          >&gt;</span
+                        ><span class="text vocab-token" tabindex="0"
+                          >Etiam turpis
+                          <span
+                            class="character-reference vocab-token"
+                            tabindex="0"
+                            >&amp;amp;</span
+                          >
+                          felis, porttitor vitae dapibus.</span
+                        ><span class="tag end-tag vocab-token" tabindex="0"
+                          >&lt;/<span class="tag-name vocab-token" tabindex="0"
+                            >div</span
+                          >&gt;</span
+                        ></span
+                      ><span
+                        class="element parent child sibling vocab-token"
+                        tabindex="0"
+                        ><span class="tag start-tag vocab-token" tabindex="0"
+                          >&lt;<span class="tag-name vocab-token" tabindex="0"
+                            >p</span
+                          >&gt;</span
+                        ><span class="children vocab-token" tabindex="0"
+                          ><span class="element child vocab-token" tabindex="0"
+                            ><span
+                              class="tag start-tag vocab-token"
+                              tabindex="0"
+                              >&lt;<span
+                                class="tag-name vocab-token"
+                                tabindex="0"
+                                >span</span
+                              >&gt;</span
+                            ><span class="text vocab-token" tabindex="0"
+                              >In vulputate, tellus turpis euismod diam.</span
+                            ><span class="tag end-tag vocab-token" tabindex="0"
+                              >&lt;/<span
+                                class="tag-name vocab-token"
+                                tabindex="0"
+                                >span</span
+                              >&gt;</span
+                            ></span
+                          ></span
+                        ><span class="tag end-tag vocab-token" tabindex="0"
+                          >&lt;/<span class="tag-name vocab-token" tabindex="0"
+                            >p</span
+                          >&gt;</span
+                        ></span
+                      ></span
+                    ></span
+                  ><span class="tag end-tag vocab-token" tabindex="0"
+                    >&lt;/<span class="tag-name vocab-token" tabindex="0"
+                      >body</span
+                    >&gt;</span
+                  ></span
+                ></span
+              ></span
+            ><span class="tag end-tag vocab-token" tabindex="0"
+              >&lt;/<span class="tag-name vocab-token" tabindex="0">html</span
+              >&gt;</span
+            ></span
+          ><br />
+        </code>
+      </div>
+    </div>
+
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        (i[r] =
+          i[r] ||
+          function() {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        'script',
+        '//www.google-analytics.com/analytics.js',
+        'ga'
+      );
+      ga('create', 'UA-21435402-3', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
